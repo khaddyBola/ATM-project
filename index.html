@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATMCARD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+    <section class="sectionATM">
+        <div class="container">
+            <div class="ATM">
+            <form action="ATMform" class="click-here">
+                <div>
+                    <label for="name">FirstName:</label>
+                    <input type="text" name="FirstName" id="FirstName">
+                </div>
+                   
+                <div>
+                    <label for="name">LastName:</label>
+                    <input type="text" name="LastName" id="LastName">
+                </div>
+                   
+                <div>
+                    <label for="option">Kindly choose your AccountType</label>
+                    <select name="option" id="option">
+                    <option value="#">Choose one option please!</option>
+                    <option value="current">Current Account</option>
+                    <option value="savings">Savings Account</option>
+                    <option value="business">Business Account</option>
+                    </select>
+                </div>
+
+                <a href="#"><button class="btn btnForm ">Send it</button></a>
+               
+                        
+            </form>
+            </div> 
+        </div>
+        
+            <div class="ATMBox">
+                <div class="ATMCard">
+                    <div class="Atm">
+                        <p class="ATMName">debit</p>
+                        <img src="img.png" alt="" class="ATMLogo"> 
+
+                    </div>  
+                    <ul class="list">
+                        <li class="listItemIcon">
+                            <ion-icon name="qr-scanner"></ion-icon>
+                        </li>
+
+                    <li class="listItem">
+                        <ion-icon name="logo-rss"></ion-icon>
+                    </li>
+                    </ul>
+                       
+                    <p class="ATMDigit">**** **** **** 6752</p>
+                    <p class="ExpDate">EXPIRES END OF 05/25</p>
+                    
+                   
+                            
+                    <div class="bankLogo">
+                        <p class="userName">Musa khadijah</p>
+                        <img src="logo.png" alt="" class="cardLogo">
+                    </div>
+                    
+                   
+                </div>
+            </div>
+            <div class="overlay hidden"></div>
+        </section>
+    </main>
+        <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+        <script defer src="script.js"></script>
+</body>
+</html>
