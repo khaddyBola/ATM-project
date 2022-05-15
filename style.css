@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?=Roboto+Mono:wght@500;700&display=swap');
 
 html {
     font-size: 62.5%;
-    overflow-x: hidden;
+    overflow-x: hidden; 
+    background-color: bisque;
 }
 
 *{
@@ -11,85 +11,72 @@ html {
     box-sizing: border-box;
 }
 
-
-body {
-    height: 100vh;
-    background-color: #dc1b22;
-    display: flex;
-    font-family: 'Roboto Mono', monospace;
-    align-items: center;
-    justify-content: center;
-}
-
-.main {
-    position: relative;
-    width: 100rem;
-    height: 60rem;
-    border-radius: 9px;
-    overflow: hidden;
-}  
-
 .sectionATM {
+    max-width: 120rem; 
     height: 90vh;
-    overflow: hidden;;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: blanchedalmond;
     align-items: center;
 }
-
 
 
 .click-here {
-    padding: 9.6rem;
-    background-color: #e7df94;
-    height: 90vh;
+    display: block;
+    padding: 9.6rem; 
+    height: 100vh;
 }
+
 
 .click-here label {
-    display: block;
     font-size: 1.6rem;
+    display: block;
     margin-bottom: 1.2rem;
-    border: none;
-    text-align: left;
+   
 }
 
-.click-here input, .click-here select {
-    width: 100%;
-    padding: 2px;
+.click-here input {
+    width: 50%;
+    padding: 1.2rem 2.2rem;
     border: none;
     color: inherit;
     margin-bottom: 1.2rem;
-    border-radius: 2px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    -o-border-radius: 2px;
+   
 }
 
-
-.btn {
-    background-color: #fff;
-    color: #333;
-    padding: 1.2rem;
-    align-items: center;
+select, option {
     width: 50%;
-    cursor: pointer;
+    padding: 1.2rem 2.2rem;
     border: none;
-    
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    
+    margin-bottom: 2.2rem;
 }
 
-.ATMBox {
+.btnForm, input[type=submit] {
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;  
+    background-color: brown;
     color: #fff;
-    background-color: #ded26a;
-    height: 90vh;
-    padding: 9.6rem 3.6rem;
+  
+}
+
+
+.atm-Exc {
+    text-align: center;
+    padding: 3.5rem 4.5rem;
+    width: 42.5rem;
+    font-size: 1.8rem;
+    border-radius: 0.9rem;
+    border: 2px dashed #bbb;
+    height: 25rem;
+}
+
+
+.atmBox {
+    color: #fff;
+    height: 70vh;
+    padding: 4.6rem;
+    width: 50rem;
 }
 
 .ATMCard {
@@ -100,7 +87,7 @@ body {
     -moz-border-radius: 9px;
     -ms-border-radius: 9px;
     -o-border-radius: 9px;
-}
+} 
 
 .Atm, .bankLogo {
     display: flex;
@@ -111,10 +98,15 @@ body {
     position: relative;
 }
 
-.ATMName {
+.bankLogo, .card-names {
+    text-align: center;
+    justify-content: space-evenly; 
+}
 
+.account-type {
     display: flex;
     font-size: 1.6rem;
+    text-transform: uppercase;
 }
 
 .ATMLogo {
@@ -127,23 +119,54 @@ body {
     -o-border-radius: 5px;
 }
 
-
-.ATMDigit {
-    font-size: 1.6rem;
-    text-align: center;
+.list {
+    list-style-type: none;
+    font-size: 2.2rem;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
-.ExpDate {
+.listIcon {
+    margin-top: 1.2rem;
+    background-color: gold;
+    height: 2rem;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.listItem {
+    margin-top: 1.2rem;
+}
+
+.card-digit {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.4rem;
+    margin-top: 2.8rem;
+    color: #ccc;
+
+}
+
+.expDate {
     text-align: center;
     justify-content: center;
     margin-top: 1.2rem;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 
-.userName {
-    font-size: 1.2rem;
-    text-align: left;
+
+.card-names {
+    justify-content: space-between; 
+    letter-spacing: 1.2px;
+    font-size: 2.2rem;  
 }
+
+
 
 .cardLogo {
     width: 5rem;
@@ -158,38 +181,7 @@ body {
 }
 
 
-.list {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    font-size: 3rem;
-  }
-  
-  .listItemIcon {
-    background-color: gold;
-    height: 3rem;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
-  
-  .listItem {
-   margin-top: 1.2rem;
-  }
-
- .hidden {
+.hidden {
     display: none; 
+    opacity: 0;
 } 
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(3px);
-    z-index: 5;
-}

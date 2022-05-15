@@ -21,59 +21,73 @@
                 <div>
                     <label for="name">LastName:</label>
                     <input type="text" name="LastName" id="LastName">
+
                 </div>
                    
                 <div>
-                    <label for="option">Kindly choose your AccountType</label>
-                    <select name="option" id="option">
-                    <option value="#">Choose one option please!</option>
-                    <option value="current">Current Account</option>
-                    <option value="savings">Savings Account</option>
-                    <option value="business">Business Account</option>
+                    <label for="#">Choose your accounty type:</label>
+                    <select name="account-type" id="account-type">
+                    <option value="current">Current</option>
+                    <option value="savings">Savings</option>
+                    <option value="business">Business</option>
                     </select>
+
                 </div>
 
-                <a href="#"><button class="btn btnForm ">Send it</button></a>
+                <div class="btnForm">
+                    <input type="submit" value="send it" id="submit">
+                      
+                </div>
+                
                
                         
             </form>
             </div> 
         </div>
-        
-            <div class="ATMBox">
+        <div class="atm-Exc">
+            Your card will display here
+        </div>
+            <div class="atmBox hidden">
                 <div class="ATMCard">
                     <div class="Atm">
-                        <p class="ATMName">debit</p>
+                        <span class="account-type">Debit</span>
                         <img src="img.png" alt="" class="ATMLogo"> 
+                    </div>
 
-                    </div>  
-                    <ul class="list">
-                        <li class="listItemIcon">
-                            <ion-icon name="qr-scanner"></ion-icon>
-                        </li>
+                    <div>
+                        <ul class="list">
+                            <li class="listIcon">
+                                <ion-icon name="qr-scanner"></ion-icon>
+                            </li>
 
-                    <li class="listItem">
-                        <ion-icon name="logo-rss"></ion-icon>
-                    </li>
-                    </ul>
+                            <li class="listItem">
+                                <ion-icon name="logo-rss"></ion-icon>
+                            </li>
+                        </ul>
+                    </div>
                        
-                    <p class="ATMDigit">**** **** **** 6752</p>
-                    <p class="ExpDate">EXPIRES END OF 05/25</p>
+                    <div class="card-digit">3139245309766752</div>
+                    <div class="expDate">
+                        <span>Expires:</span>
+                        <span class="expiry-date">05/24</span>
+                    </div>
                     
-                   
-                            
                     <div class="bankLogo">
-                        <p class="userName">Musa khadijah</p>
+                        <div class="card-names">
+                            <span class="firstname">Firstname</span>
+                            <span class="lastname">Lastname</span>
+                            
+                        </div>
                         <img src="logo.png" alt="" class="cardLogo">
                     </div>
                     
                    
                 </div>
-            </div>
-            <div class="overlay hidden"></div>
+            </div> 
+        
         </section>
     </main>
-        <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
-        <script defer src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script defer src="script.js"></script>
 </body>
 </html>
